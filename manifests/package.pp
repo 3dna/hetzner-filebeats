@@ -12,10 +12,13 @@ class filebeats::package {
           'id'        => '46095ACC8548582C1A2699A9D27D666CD88E42B4',
           'server'    => 'pool.sks-keyservers.net',
         },
-        include     => {
-          'deb' => true,
-          'src' => false,
-        },
+        include_deb => true,
+        include_src => false,
+
+        #include     => {
+        #  'deb' => true,
+        #  'src' => false,
+        #},
       }
       package {'filebeat':
         ensure => present,
