@@ -8,10 +8,8 @@ class filebeats::package {
         location    => 'http://packages.elastic.co/beats/apt',
         release     => 'stable',
         repos       => 'main',
-        key         => {
-          'id'        => 'D88E42B4',
-          'server'    => 'pool.sks-keyservers.net',
-        },
+        key         => '46095ACC8548582C1A2699A9D27D666CD88E42B4',
+        key_server  => 'pool.sks-keyservers.net',
         include_deb => true,
         include_src => false,
 
