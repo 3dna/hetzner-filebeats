@@ -9,7 +9,7 @@ class filebeats::package {
         release     => 'stable',
         repos       => 'main',
         key         => {
-          'id'        => 'D27D666CD88E42B4',
+          'id'        => 'D88E42B4',
           'server'    => 'pool.sks-keyservers.net',
         },
         include_deb => true,
